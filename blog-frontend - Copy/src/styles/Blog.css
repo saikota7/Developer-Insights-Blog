@@ -1,0 +1,201 @@
+/* General Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Main Wrapper */
+div {
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Post Creation Section */
+.post-creation {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.post-creation textarea {
+  width: 100%;
+  padding: 20px;  /* Adjusted padding to a more reasonable value */
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure the padding doesn't affect the overall width */
+}
+
+
+.post-creation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #555;
+}
+
+.post-creation input,
+.post-creation textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.post-creation button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.post-creation button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog Post List Section */
+.posts-list {
+  margin-top: 30px;
+}
+
+.posts-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.post {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Post Content Area (Scrollable) */
+.post p {
+  color: #555;
+  line-height: 1.6;
+  max-height: 200px; /* Maximum height for content */
+  overflow-y: auto; /* Enables scrolling */
+  padding-right: 10px; /* Add padding to avoid text touching the scrollbar */
+}
+
+.post button {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post button:hover {
+  background-color: #218838;
+}
+
+.post .delete-btn {
+  background-color: #dc3545;
+}
+
+.post .delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .post-creation {
+    padding: 15px;
+  }
+
+  .post-creation input,
+  .post-creation textarea {
+    font-size: 14px;
+  }
+
+  .post-creation button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  .posts-list h2,
+  .post h3 {
+    font-size: 20px;
+  }
+
+  .post button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post-creation input,
+  .post-creation textarea {
+    font-size: 13px;
+  }
+
+  .post-creation button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .post button {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .post h3 {
+    font-size: 18px;
+  }
+
+  .posts-list h2 {
+    font-size: 24px;
+  }
+}
+
+/* Advanced Effects */
+.post button {
+  transition: transform 0.2s ease;
+}
+
+.post button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
