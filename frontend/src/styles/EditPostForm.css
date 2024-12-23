@@ -1,0 +1,82 @@
+/* EditPostForm Styling */
+.edit-post-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-post-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .edit-post-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .edit-post-form label {
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  .edit-post-form input,
+  .edit-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-post-form input:focus,
+  .edit-post-form textarea:focus {
+    border-color: #FD4602; /* Focus color */
+    outline: none;
+  }
+  
+  .edit-post-form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .edit-post-form button {
+    background-color: #FD4602;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-post-form button:hover {
+    background-color: #ff5722;
+  }
+  
+  @media (max-width: 768px) {
+    .edit-post-form {
+      padding: 15px;
+      margin: 30px;
+    }
+  
+    .edit-post-form h1 {
+      font-size: 24px;
+    }
+  
+    .edit-post-form label {
+      font-size: 14px;
+    }
+  
+    .edit-post-form button {
+      padding: 10px 15px;
+    }
+  }
+  
