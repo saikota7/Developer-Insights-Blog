@@ -84,14 +84,3 @@ We welcome contributions to this blog project! Here’s how you can contribute:
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-For questions or feedback, feel free to open an issue or email me at `your.email@example.com`.
-
----
