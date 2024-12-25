@@ -55,7 +55,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'blogsite.urls'
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    "http://localhost:5173/",
+    "https://blog-frontend-jjd6.onrender.com",
+]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
